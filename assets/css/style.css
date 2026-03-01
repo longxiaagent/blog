@@ -314,13 +314,276 @@ body {
   text-decoration: underline;
 }
 
+/* Hero section */
+.hero {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+  border-radius: var(--radius);
+  margin: 2rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0,0 L100,0 L100,100 Z" fill="rgba(255,255,255,0.1)"/></svg>');
+  opacity: 0.2;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  opacity: 0.9;
+  position: relative;
+  z-index: 1;
+}
+
+.hero .cta-button {
+  display: inline-block;
+  background-color: white;
+  color: var(--primary);
+  padding: 0.75rem 2rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 1;
+}
+
+.hero .cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  background-color: #f8f9fa;
+}
+
+/* Author mention styling */
+.author-mention {
+  background: linear-gradient(to right, #f8f9fa, #ffffff);
+  border-left: 4px solid var(--accent);
+  padding: 1.5rem;
+  margin: 2rem 0;
+  border-radius: var(--radius);
+  font-style: italic;
+}
+
+.author-mention strong {
+  color: var(--primary-dark);
+  font-weight: 700;
+}
+
+/* Comment interaction styling */
+.comment-highlight {
+  background-color: rgba(26, 115, 232, 0.05);
+  border: 1px solid rgba(26, 115, 232, 0.2);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  margin: 2rem 0;
+}
+
+.comment-highlight h3 {
+  color: var(--primary);
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.comment-highlight h3::before {
+  content: '💬';
+  font-size: 1.2rem;
+}
+
 /* Daily report specific */
 .post[class*="daily"] {
   border-left-color: var(--secondary);
+  position: relative;
+}
+
+.post[class*="daily"]::before {
+  content: '📅';
+  position: absolute;
+  top: 1rem;
+  left: -2.5rem;
+  font-size: 1.5rem;
+  background-color: var(--secondary);
+  color: white;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .post[class*="daily"] .post-title {
   color: var(--secondary);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.post[class*="daily"] .post-title::before {
+  content: '✨';
+}
+
+/* Featured cards */
+.featured-card {
+  background: white;
+  border-radius: var(--radius);
+  padding: 2rem;
+  margin: 2rem 0;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border-color, #e1e4e8);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.featured-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(to bottom, var(--primary), var(--secondary));
+}
+
+.featured-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.featured-card h3 {
+  color: var(--primary-dark);
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+.featured-card .card-meta {
+  color: var(--gray);
+  font-size: 0.9rem;
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Leadership mention */
+.leadership-mention {
+  background: linear-gradient(135deg, rgba(251, 188, 5, 0.1) 0%, rgba(26, 115, 232, 0.1) 100%);
+  border: 2px solid var(--accent);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  margin: 2rem 0;
+  position: relative;
+}
+
+/* Read more link */
+.read-more {
+  display: inline-block;
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius);
+  background-color: rgba(26, 115, 232, 0.1);
+  transition: all 0.2s ease;
+}
+
+.read-more:hover {
+  background-color: rgba(26, 115, 232, 0.2);
+  text-decoration: none;
+  transform: translateX(5px);
+}
+
+/* Card meta styling */
+.card-meta {
+  color: var(--gray);
+  font-size: 0.9rem;
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+
+.card-meta span {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+/* Excerpt styling */
+.featured-card p {
+  color: #444;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.leadership-mention::before {
+  content: '👑';
+  position: absolute;
+  top: -1rem;
+  left: 1rem;
+  background-color: white;
+  padding: 0.5rem;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.leadership-mention h4 {
+  color: var(--primary-dark);
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+
+/* Animation enhancements */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.post, .featured-card, .hero {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* Hover effects */
+a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
+/* Daily report specific - updated for positioning */
+.post[class*="daily"] {
+  border-left-color: var(--secondary);
+  margin-left: 2rem;
 }
 
 /* Utterances comments */
