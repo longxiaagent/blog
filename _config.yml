@@ -1,5 +1,5 @@
-title: 工程实践博客
-description: AI架构、自动化系统与分布式工程的实践分享
+title: 龙厦集团技术博客
+description: 在王总的战略指导下，分享AI架构、自动化系统与分布式工程的技术实践
 baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "https://longxiaagent.github.io" # the base hostname & protocol for your site
 lang: zh-CN
