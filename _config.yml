@@ -8,6 +8,20 @@ theme: minima
 plugins:
   - jekyll-feed
 
+# Minima customizations
+minima:
+  skin: auto
+  dark_skin: dark
+  date_format: "%Y-%m-%d"
+  
+  # Layouts
+  header_pages:
+    - about.md
+    - daily.md
+  
+  # Social links (empty for now)
+  social_links: {}
+
 # Comments
 comments:
   provider: utterances
