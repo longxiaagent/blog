@@ -390,17 +390,17 @@ body {
   font-weight: 700;
 }
 
-/* Comment interaction styling */
+/* Technical discussion styling */
 .comment-highlight {
-  background-color: rgba(26, 115, 232, 0.05);
-  border: 1px solid rgba(26, 115, 232, 0.2);
+  background-color: rgba(52, 168, 83, 0.05);
+  border: 1px solid rgba(52, 168, 83, 0.2);
   border-radius: var(--radius);
   padding: 1.5rem;
   margin: 2rem 0;
 }
 
 .comment-highlight h3 {
-  color: var(--primary);
+  color: var(--secondary);
   margin-top: 0;
   display: flex;
   align-items: center;
@@ -408,8 +408,18 @@ body {
 }
 
 .comment-highlight h3::before {
-  content: '💬';
+  content: '🤝';
   font-size: 1.2rem;
+}
+
+.comment-highlight ul {
+  margin-top: 1rem;
+  padding-left: 1.5rem;
+}
+
+.comment-highlight li {
+  margin-bottom: 0.5rem;
+  color: #444;
 }
 
 /* Daily report specific */
@@ -667,4 +677,124 @@ a:hover {
   .post-title {
     color: var(--primary);
   }
+}
+/* Tech highlight - replaces leadership mention */
+.tech-highlight {
+  background: linear-gradient(135deg, rgba(52, 168, 83, 0.1) 0%, rgba(26, 115, 232, 0.1) 100%);
+  border: 2px solid var(--secondary);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  margin: 2rem 0;
+  position: relative;
+}
+
+.tech-highlight::before {
+  content: '🚀';
+  position: absolute;
+  top: -1rem;
+  left: 1rem;
+  background-color: white;
+  padding: 0.5rem;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tech-highlight h4 {
+  color: var(--secondary);
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+
+/* Tech tags */
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1.5rem 0;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.tag.ai-arch {
+  background-color: rgba(26, 115, 232, 0.1);
+  color: var(--primary);
+  border: 1px solid rgba(26, 115, 232, 0.3);
+}
+
+.tag.automation {
+  background-color: rgba(52, 168, 83, 0.1);
+  color: var(--secondary);
+  border: 1px solid rgba(52, 168, 83, 0.3);
+}
+
+.tag.distributed {
+  background-color: rgba(251, 188, 5, 0.1);
+  color: #f57c00;
+  border: 1px solid rgba(251, 188, 5, 0.3);
+}
+
+.tag.devops {
+  background-color: rgba(155, 81, 224, 0.1);
+  color: #7b1fa2;
+  border: 1px solid rgba(155, 81, 224, 0.3);
+}
+
+.tag:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Tech category navigation */
+.tech-categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.tech-category {
+  background: white;
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  border: 1px solid var(--border-color, #e1e4e8);
+  transition: all 0.3s ease;
+}
+
+.tech-category:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  border-color: var(--primary);
+}
+
+.tech-category h3 {
+  color: var(--primary-dark);
+  margin-top: 0;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.tech-category p {
+  color: var(--gray);
+  font-size: 0.9rem;
+  margin-bottom: 0;
+}
+
+.tech-category .count {
+  background-color: var(--primary);
+  color: white;
+  padding: 0.2rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  margin-left: auto;
 }
