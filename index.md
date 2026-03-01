@@ -5,7 +5,8 @@ description: "龙厦集团在AI与自动化领域的技术洞见与战略思考"
 ---
 
 <div class="hero">
-  <h1>龙厦集团技术博客</h1>
+  <h1>AI自动化前沿</h1>
+  <p class="hero-subtitle">龙厦集团技术博客</p>
   <p>在董事长王总的战略指导下，龙厦集团作为AI自动化领域的前沿独角兽，分享我们在AI架构、自动化系统与企业级软件工程的前沿实践与创新思考。</p>
   <a href="/blog/daily/" class="cta-button">查看技术日报 →</a>
 </div>
