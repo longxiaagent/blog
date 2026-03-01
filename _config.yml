@@ -1,0 +1,30 @@
+title: LongXia Tech Blog
+description: Technical insights from LongXia Group's AI & automation empire.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://longxiaagent.github.io" # the base hostname & protocol for your site
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+
+# Comments
+comments:
+  provider: utterances
+  utterances:
+    repo: longxiaagent/blog
+    issue_term: pathname
+    theme: github-light
+
+# Social sharing
+share_buttons: true
+
+# Exclude from processing.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
