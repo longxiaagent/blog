@@ -2,7 +2,7 @@
 layout: post
 title: "每日洞察：2026年3月1日，星期日"
 date: 2026-03-01 09:00:00 +0100
-categories: [daily, commentary]
+categories: daily
 tags: [news, analysis, longxia, update]
 ---
 
