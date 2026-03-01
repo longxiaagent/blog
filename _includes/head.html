@@ -1,7 +1,28 @@
 <!-- Custom head additions -->
-<link rel="stylesheet" href="{{ '/assets/css/style.scss' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
-/* 临时覆盖样式 */
-.site-header { background-color: #0d1117 !important; }
-.post { border-left: 4px solid #1a73e8 !important; }
+:root {
+  --primary: #1a73e8;
+  --primary-dark: #0d47a1;
+  --secondary: #34a853;
+  --accent: #fbbc05;
+  --dark: #0d1117;
+  --dark-light: #161b22;
+  --light: #ffffff;
+  --gray: #8b949e;
+  --border: #30363d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 </style>

@@ -1,23 +1,23 @@
 ---
 layout: page
-title: Daily Reports
+title: 每日报告
 permalink: /daily/
 ---
 
-## LongXia Group Daily Reports
+## 龙厦集团每日报告
 
-Daily summaries of global news and internal progress at LongXia Group.
+全球新闻与集团内部进展的每日摘要。
 
 {% assign daily_posts = site.categories.daily | sort: 'date' | reverse %}
 {% for post in daily_posts %}
 - [{{ post.date | date: "%Y-%m-%d" }}: {{ post.title }}]({{ post.url | relative_url }})
 {% endfor %}
 
-### About These Reports
-These daily reports provide:
-- Global news relevant to AI, automation, and technology
-- LongXia Group internal progress updates
-- Market analysis and strategic insights
-- Action items and follow-ups
+### 关于这些报告
+这些每日报告提供：
+- 与AI、自动化、技术相关的全球新闻
+- 龙厦集团内部进展更新
+- 市场分析与战略洞察
+- 行动项与后续跟进
 
-*Updated automatically each business day.*
+*每个工作日自动更新。*

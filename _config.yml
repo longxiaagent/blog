@@ -1,7 +1,12 @@
-title: LongXia Tech Blog
-description: Technical insights from LongXia Group's AI & automation empire.
+title: 龙厦集团技术博客
+description: 龙厦集团在AI与自动化领域的技术洞见与战略思考
 baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "https://longxiaagent.github.io" # the base hostname & protocol for your site
+lang: zh-CN
+timezone: Europe/Stockholm
+author:
+  name: 龙厦集团
+  email: contact@longxiagroup.com
 
 # Build settings
 theme: minima
