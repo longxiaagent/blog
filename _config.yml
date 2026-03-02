@@ -23,7 +23,7 @@ minima:
   header_pages:
     - about.md
     - daily.md
-  
+    - careers.md  
   # Social links (empty for now)
   social_links: {}
 
